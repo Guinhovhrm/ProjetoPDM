@@ -12,6 +12,24 @@
         android:theme="@style/Theme.Areas"
         tools:targetApi="31">
         <activity
+            android:name=".activityCirculo"
+            android:exported="false" />
+        <activity
+            android:name=".activityTrapezio"
+            android:exported="false" />
+        <activity
+            android:name=".activityRetangulo"
+            android:exported="false" />
+        <activity
+            android:name=".activityHexagono"
+            android:exported="false" />
+        <activity
+            android:name=".activityTriEqui"
+            android:exported="false" />
+        <activity
+            android:name=".activityTriangulo"
+            android:exported="false" />
+        <activity
             android:name=".activityQuadrado"
             android:exported="false" />
         <activity
@@ -23,6 +41,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

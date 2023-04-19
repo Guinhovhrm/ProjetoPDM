@@ -10,67 +10,112 @@
         android:id="@+id/btnCirc"
         android:layout_width="175dp"
         android:layout_height="77dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Círculo"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="638dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <Button
         android:id="@+id/btnTrapezio"
         android:layout_width="175dp"
         android:layout_height="77dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Trapézio"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="542dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnCirc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <Button
         android:id="@+id/btnTriangulo"
         android:layout_width="175dp"
         android:layout_height="77dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Triângulo"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnTriEqui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <Button
         android:id="@+id/btnHexagono"
         android:layout_width="175dp"
         android:layout_height="77dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Hexágono"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="344dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnRetangulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <Button
         android:id="@+id/btnQuadrado"
         android:layout_width="175dp"
         android:layout_height="77dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Quadrado"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="73dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnTriangulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnTriEqui"
         android:layout_width="175dp"
         android:layout_height="77dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Triângulo Equilátero"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="249dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnHexagono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <Button
         android:id="@+id/btnRetangulo"
         android:layout_width="175dp"
         android:layout_height="77dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Retângulo"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnTrapezio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="382dp"
-        android:layout_height="48dp"
+        android:layout_width="392dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/architects_daughter"
         android:text="Calculadora de áreas"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="11dp" />
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnQuadrado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="202dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="80dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/output_onlinepngtools__photoutils_com_"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
