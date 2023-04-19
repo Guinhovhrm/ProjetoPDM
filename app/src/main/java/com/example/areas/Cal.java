@@ -51,7 +51,7 @@ public class Cal {
 
     public double CalCirculo(float raio) {
         //String raio = it.getStringExtra("raio");
-        double result = Math.PI * raio * raio;
+        double result = Math.PI * (raio * raio);
 
         //TxtVar.setText("A area do circulo é:" + result);
         return result;
