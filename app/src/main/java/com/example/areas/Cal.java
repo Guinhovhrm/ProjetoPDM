@@ -27,7 +27,7 @@ public class Cal {
 
     public double CalHexagono(float lado) {
         //String lado = it.getStringExtra("lado");
-        double result = (6 * lado * lado * Math.sqrt(3)) / 2;
+        double result = (6 * ((lado * lado) * Math.sqrt(3))) / 4;
         //TxtVar.setText("A area do hexagono é:" + result);
         return result;
     }

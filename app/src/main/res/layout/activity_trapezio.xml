@@ -6,4 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".activityTrapezio">
 
+    <EditText
+        android:id="@+id/edBaseMaiorT"
+        android:layout_width="234dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="326dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:text="Valor da base Maior"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edBaseMenorT" />
+
+    <EditText
+        android:id="@+id/edBaseMenorT"
+        android:layout_width="234dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btnCalcTrapezio"
+        android:layout_width="134dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="31dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAlturaT" />
+
+    <EditText
+        android:id="@+id/edAlturaT"
+        android:layout_width="234dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="224dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="22dp"
+        android:text="Valor da altura"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edBaseMaiorT" />
+
+    <TextView
+        android:id="@+id/tvResultTrapezio"
+        android:layout_width="195dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="24dp"
+        android:text="Área do Trapézio"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcTrapezio" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="326dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="26dp"
+        android:text="Valor da base Menor"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,18 +19,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <Button
-        android:id="@+id/btnTrapezio"
-        android:layout_width="175dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:text="Trapézio"
-        app:layout_constraintBottom_toTopOf="@+id/btnCirc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4" />
-
-    <Button
         android:id="@+id/btnTriangulo"
         android:layout_width="175dp"
         android:layout_height="77dp"
@@ -86,8 +74,21 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:text="Retângulo"
-        app:layout_constraintBottom_toTopOf="@+id/btnTrapezio"
+        app:layout_constraintBottom_toTopOf="@+id/btnTrap"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btnTrap"
+        android:layout_width="175dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Trapézio"
+        app:layout_constraintBottom_toTopOf="@+id/btnCirc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <TextView

@@ -17,6 +17,9 @@ public class activityHexagono extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hexagono);
+        btnCalcHex = findViewById(R.id.btnCalcHex);
+        edLadoHex = findViewById(R.id.edLadoHex);
+        tvResultHex = findViewById(R.id.tvResultHex);
         btnCalcHex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

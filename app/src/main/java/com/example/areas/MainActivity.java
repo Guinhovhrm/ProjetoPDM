@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnQuadrado, btnTriangulo, btnTriEqui, btnHex, btnRetangulo, btnTrapezio, btnCirc;
+    Button btnQuadrado, btnTriangulo, btnTriEqui, btnHex, btnRetangulo, btnTrap, btnCirc;
     Intent in;
 
     @Override
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnTriEqui = findViewById(R.id.btnTriEqui);
         btnHex = findViewById(R.id.btnHex);
         btnRetangulo = findViewById(R.id.btnRetangulo);
-        btnTrapezio = findViewById(R.id.btnTrapezio);
+        btnTrap = findViewById(R.id.btnTrap);
         btnCirc = findViewById(R.id.btnCirc);
 
         btnQuadrado.setOnClickListener(new View.OnClickListener() {
@@ -61,12 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        btnTrapezio.setOnClickListener(new View.OnClickListener() {
+        btnTrap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 in = new Intent(MainActivity.this, activityTrapezio.class);
                 startActivity(in);
-
             }
         });
         btnCirc.setOnClickListener(new View.OnClickListener() {
