@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".activityCirculo">
 
+    <EditText
+        android:id="@+id/edRaioCirc"
+        android:layout_width="267dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="208dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="68dp"
+        android:text="Valor do raio"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResultCirc"
+        android:layout_width="195dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="124dp"
+        android:text="Área do Círculo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcCirc" />
+
+    <Button
+        android:id="@+id/btnCalcCirc"
+        android:layout_width="134dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edRaioCirc" />
 </androidx.constraintlayout.widget.ConstraintLayout>
