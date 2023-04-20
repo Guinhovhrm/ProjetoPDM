@@ -43,7 +43,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
     <Button
-        android:id="@+id/btnHexagono"
+        android:id="@+id/btnHex"
         android:layout_width="175dp"
         android:layout_height="77dp"
         android:layout_marginStart="2dp"
@@ -74,7 +74,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:text="Triângulo Equilátero"
-        app:layout_constraintBottom_toTopOf="@+id/btnHexagono"
+        app:layout_constraintBottom_toTopOf="@+id/btnHex"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
