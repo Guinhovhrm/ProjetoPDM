@@ -7,14 +7,14 @@
     tools:context=".activityHexagono">
 
     <Button
-        android:id="@+id/btnCalcTriEqui2"
+        android:id="@+id/btnCalcHex"
         android:layout_width="134dp"
         android:layout_height="62dp"
         android:layout_marginTop="42dp"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edLadoTriEqui2" />
+        app:layout_constraintTop_toBottomOf="@+id/edLadoHex" />
 
     <TextView
         android:id="@+id/textView5"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edLadoTriEqui2"
+        android:id="@+id/edLadoHex"
         android:layout_width="267dp"
         android:layout_height="93dp"
         android:layout_marginTop="56dp"
@@ -40,18 +40,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
-        android:id="@+id/tvResultTriEqui2"
+        android:id="@+id/tvResultHex"
         android:layout_width="186dp"
         android:layout_height="126dp"
         android:layout_marginTop="133dp"
         android:layout_marginBottom="88dp"
-        android:text="Área do Triângulo Equilatero"
+        android:text="Área do Hexágono"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalcTriEqui2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcHex" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
