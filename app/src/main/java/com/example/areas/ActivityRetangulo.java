@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activityRetangulo extends AppCompatActivity {
+public class ActivityRetangulo extends AppCompatActivity {
 
     Button btnCalcRetangulo;
     EditText edBaseRetangulo, edAlturaRetangulo;

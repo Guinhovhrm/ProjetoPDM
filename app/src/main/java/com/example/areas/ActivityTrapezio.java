@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activityTrapezio extends AppCompatActivity {
+public class ActivityTrapezio extends AppCompatActivity {
 
     Button btnCalcTrapezio;
     EditText edBaseMenorT, edBaseMaiorT, edAlturaT;

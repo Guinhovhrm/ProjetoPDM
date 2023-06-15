@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activityCirculo extends AppCompatActivity {
+public class ActivityCirculo extends AppCompatActivity {
 
     Button btnCalcCirc;
     EditText edRaioCirc;

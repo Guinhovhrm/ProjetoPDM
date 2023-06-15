@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activityQuadrado extends AppCompatActivity {
+public class ActivityQuadrado extends AppCompatActivity {
 
     Button btnCalcQdrd;
     EditText edValorQdrd;

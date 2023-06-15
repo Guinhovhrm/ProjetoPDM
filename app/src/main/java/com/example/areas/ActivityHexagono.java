@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activityHexagono extends AppCompatActivity {
+public class ActivityHexagono extends AppCompatActivity {
 
     Button btnCalcHex;
     EditText edLadoHex;

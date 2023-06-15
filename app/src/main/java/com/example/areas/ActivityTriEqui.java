@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
-public class activityTriEqui extends AppCompatActivity {
+public class ActivityTriEqui extends AppCompatActivity {
     DecimalFormat df = new DecimalFormat("0.00");
     Button btnCalcTriEqui;
     EditText edLadoTriEqui;

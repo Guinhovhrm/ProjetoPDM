@@ -27,21 +27,21 @@ public class MainActivity extends AppCompatActivity {
         btnQuadrado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, activityQuadrado.class);
+                in = new Intent(MainActivity.this, ActivityQuadrado.class);
                 startActivity(in);
             }
         });
         btnTriangulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, activityTriangulo.class);
+                in = new Intent(MainActivity.this, ActivityTriangulo.class);
                 startActivity(in);
             }
         });
         btnTriEqui.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, activityTriEqui.class);
+                in = new Intent(MainActivity.this, ActivityTriEqui.class);
                 startActivity(in);
 
             }
@@ -49,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
         btnHex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, activityHexagono.class);
+                in = new Intent(MainActivity.this, ActivityHexagono.class);
                 startActivity(in);
             }
         });
         btnRetangulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, activityRetangulo.class);
+                in = new Intent(MainActivity.this, ActivityRetangulo.class);
                 startActivity(in);
 
             }
@@ -64,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
         btnTrap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, activityTrapezio.class);
+                in = new Intent(MainActivity.this, ActivityTrapezio.class);
                 startActivity(in);
             }
         });
         btnCirc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, activityCirculo.class);
+                in = new Intent(MainActivity.this, ActivityCirculo.class);
                 startActivity(in);
 
             }

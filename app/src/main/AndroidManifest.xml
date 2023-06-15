@@ -21,25 +21,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activityCirculo"
+            android:name=".ActivityCirculo"
             android:exported="false" />
         <activity
-            android:name=".activityTrapezio"
+            android:name=".ActivityTrapezio"
             android:exported="false" />
         <activity
-            android:name=".activityRetangulo"
+            android:name=".ActivityRetangulo"
             android:exported="false" />
         <activity
-            android:name=".activityHexagono"
+            android:name=".ActivityHexagono"
             android:exported="false" />
         <activity
-            android:name=".activityTriEqui"
+            android:name=".ActivityTriEqui"
             android:exported="false" />
         <activity
-            android:name=".activityTriangulo"
+            android:name=".ActivityTriangulo"
             android:exported="false" />
         <activity
-            android:name=".activityQuadrado"
+            android:name=".ActivityQuadrado"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

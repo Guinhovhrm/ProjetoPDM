@@ -11,6 +11,10 @@ public class Historico {
         this.setVal3(val3);
         this.setResultado(resultado);
     }
+    public Historico(int idHist, float pontuação){
+        this.setIdHist(idHist);
+        setResultado(pontuacao);
+    }
 
     @Override
     public String toString() {
@@ -30,6 +34,7 @@ public class Historico {
     private float val2;
     private float val3;
     private float resultado;
+    private float pontuacao;
 
     //ID USUARIO
     //SET ID Usuario
@@ -89,4 +94,7 @@ public class Historico {
     protected void setResultado(float resultado){
         this.resultado = resultado;
     }
+    protected  float getPontuacao() { return pontuacao; }
+    protected void setPontuacao(float pontuacao) { this.pontuacao = pontuacao; }
+
 }

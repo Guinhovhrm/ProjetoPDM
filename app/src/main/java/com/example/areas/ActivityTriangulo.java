@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activityTriangulo extends AppCompatActivity {
+public class ActivityTriangulo extends AppCompatActivity {
 
     Button btnCalcTriangulo;
     EditText edBaseTriangulo, edAlturaTriangulo;

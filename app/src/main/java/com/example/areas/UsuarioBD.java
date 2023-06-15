@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class AcessoBD extends SQLiteOpenHelper {
+public class UsuarioBD extends SQLiteOpenHelper {
 
     protected static final String TABELA_USUARIO = "TABELA_USUARIO";
     protected static final String USUARIO_ID = "ID";
@@ -20,7 +20,7 @@ public class AcessoBD extends SQLiteOpenHelper {
     protected static final String USUARIO_PONTUACAO = "USUARIO_PONTUACAO";
 
 
-    public AcessoBD(@Nullable Context context) {
+    public UsuarioBD(@Nullable Context context) {
         super(context, "ClienteBD", null, 1);
     }
 
