@@ -2,7 +2,6 @@ package com.example.areas;
 
 public class Historico {
 
-
     public Historico(int idHisto, String tipConta, float val1, float val2, float val3, float resultado) {
         this.setIdHist(idHist);
         this.setTipConta(tipConta);
@@ -13,7 +12,7 @@ public class Historico {
     }
     public Historico(int idHist, float pontuação){
         this.setIdHist(idHist);
-        setResultado(pontuacao);
+        setPontuacao(pontuacao);
     }
 
     @Override
