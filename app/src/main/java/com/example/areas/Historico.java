@@ -10,7 +10,7 @@ public class Historico {
         this.setVal3(val3);
         this.setResultado(resultado);
     }
-    public Historico(int idHist, float pontuação){
+    public Historico(int historicoCod, String historicoTpConta, int historicoVal1, int historicoVal2, int historicoVal3, int idHist, float pontuação){
         this.setIdHist(idHist);
         setPontuacao(pontuacao);
     }
