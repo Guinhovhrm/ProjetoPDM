@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Calculadora extends AppCompatActivity {
 
     Button btnQuadrado, btnTriangulo, btnTriEqui, btnHex, btnRetangulo, btnTrap, btnCirc;
     Intent in;
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculadora);
         btnQuadrado = findViewById(R.id.btnQuadrado);
         btnTriangulo = findViewById(R.id.btnTriangulo);
         btnTriEqui = findViewById(R.id.btnTriEqui);
@@ -27,21 +27,21 @@ public class MainActivity extends AppCompatActivity {
         btnQuadrado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, ActivityQuadrado.class);
+                in = new Intent(Calculadora.this, ActivityQuadrado.class);
                 startActivity(in);
             }
         });
         btnTriangulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, ActivityTriangulo.class);
+                in = new Intent(Calculadora.this, ActivityTriangulo.class);
                 startActivity(in);
             }
         });
         btnTriEqui.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, ActivityTriEqui.class);
+                in = new Intent(Calculadora.this, ActivityTriEqui.class);
                 startActivity(in);
 
             }
@@ -49,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
         btnHex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, ActivityHexagono.class);
+                in = new Intent(Calculadora.this, ActivityHexagono.class);
                 startActivity(in);
             }
         });
         btnRetangulo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, ActivityRetangulo.class);
+                in = new Intent(Calculadora.this, ActivityRetangulo.class);
                 startActivity(in);
 
             }
@@ -64,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
         btnTrap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, ActivityTrapezio.class);
+                in = new Intent(Calculadora.this, ActivityTrapezio.class);
                 startActivity(in);
             }
         });
         btnCirc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                in = new Intent(MainActivity.this, ActivityCirculo.class);
+                in = new Intent(Calculadora.this, ActivityCirculo.class);
                 startActivity(in);
 
             }
