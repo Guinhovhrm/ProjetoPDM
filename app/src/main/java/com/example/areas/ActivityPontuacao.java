@@ -19,7 +19,10 @@ public class ActivityPontuacao extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pontuacao);
-        Intent in = getIntent();
+        Intent in;
+        Bundle extras = getIntent().getExtras();
+        String player = extras.getString("Player");
+        String Pontuacao = extras.getString("Pontuacao");
         btnModificarPont = findViewById(R.id.btnModificarPont);
         btnModificarPlayer = findViewById(R.id.btnModificarPlayer);
         btnExcluir = findViewById(R.id.btnExcluir);
@@ -29,9 +32,11 @@ public class ActivityPontuacao extends AppCompatActivity {
         edNovaPont = findViewById(R.id.edNovaPont);
         edNovoPlayer = findViewById(R.id.edNovoPlayer);
 
+
         //------------??????????POR QUE NÃO FUNCIONA??????????------------
-        tvJogador.setText(in.getStringExtra("Player"));
-        tvPontuacaoJogador.setText(in.getStringExtra("Pontuacao"));
+
+        tvJogador.setText(player);
+        tvPontuacaoJogador.setText(Pontuacao);
         //------------??????????POR QUE NÃO FUNCIONA??????????------------
 
         btnModificarPont.setOnClickListener(new View.OnClickListener() {

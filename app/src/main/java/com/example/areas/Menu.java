@@ -44,8 +44,6 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 in = new Intent(Menu.this, ActivityPontuacao.class);
-
-
                 in.putExtra("Player", user.getNomeUsuario());
                 in.putExtra("Pontuacao", user.getPontuacaoUsuario());
                 startActivity(in);
