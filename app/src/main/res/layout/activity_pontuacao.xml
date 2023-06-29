@@ -6,4 +6,157 @@
     android:layout_height="match_parent"
     tools:context=".ActivityPontuacao">
 
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="206dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="83dp"
+        android:text="Excluir"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnModificarPlayer"
+        android:layout_width="143dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="48dp"
+        android:text="Modificar Jogador"
+        app:layout_constraintBottom_toTopOf="@+id/btnExcluir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnModificarPont"
+        android:layout_width="143dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="7dp"
+        android:text="Modificar Pontuação"
+        app:layout_constraintBottom_toTopOf="@+id/btnModificarPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPontuacaoMVP"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="54dp"
+        android:text="100000"
+        android:textColor="@color/black"
+        android:textSize="80px"
+        app:layout_constraintBottom_toTopOf="@+id/tvPontuacaoJogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMVP" />
+
+    <TextView
+        android:id="@+id/tvMVP"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="54dp"
+        android:text="JogadorFoda"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvJogador"
+        app:layout_constraintEnd_toStartOf="@+id/tvPontuacaoMVP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPontuacaoJogador"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        android:hint="Pontuação "
+        android:textColor="@color/black"
+        android:textSize="80px"
+        app:layout_constraintBottom_toTopOf="@+id/btnModificarPont"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvJogador"
+        android:layout_width="175dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="83dp"
+        android:hint="Jogador "
+        android:textColor="@color/black"
+        android:textSize="80px"
+        app:layout_constraintBottom_toTopOf="@+id/edNovaPont"
+        app:layout_constraintEnd_toStartOf="@+id/tvPontuacaoJogador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="158dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="56dp"
+        android:text="JOGADOR"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMVP"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="158dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="56dp"
+        android:text="PONTUAÇÃO"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPontuacaoMVP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNovaPont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="Nova pontuação"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edNovoPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/btnModificarPont"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edNovoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="249dp"
+        android:ems="10"
+        android:hint="Novo nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnModificarPlayer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="308dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

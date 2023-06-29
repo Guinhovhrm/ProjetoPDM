@@ -22,11 +22,13 @@ public class Menu extends AppCompatActivity {
         btnCalc = findViewById(R.id.btnCalc);
         edNomeUser = findViewById(R.id.edNomeUser);
         Usuario user = new Usuario();
+        int pont = 0; //por enquanto é 0, já que não tem o jogo
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 user.setNomeUsuario(edNomeUser.toString());
+                user.setPontuacaoUsuario(pont);
 
             }
         });
@@ -36,6 +38,17 @@ public class Menu extends AppCompatActivity {
                 in = new Intent(Menu.this, Calculadora.class);
                 startActivity(in);
 
+            }
+        });
+        btnPont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                in = new Intent(Menu.this, ActivityPontuacao.class);
+
+
+                in.putExtra("Player", user.getNomeUsuario());
+                in.putExtra("Pontuacao", user.getPontuacaoUsuario());
+                startActivity(in);
             }
         });
 
