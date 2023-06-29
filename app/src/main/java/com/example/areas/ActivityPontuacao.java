@@ -19,10 +19,11 @@ public class ActivityPontuacao extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pontuacao);
-        Intent in;
+        //Intent in;
         Bundle extras = getIntent().getExtras();
         String player = extras.getString("Player");
         String Pontuacao = extras.getString("Pontuacao");
+        System.out.println("Ronan player:"+player+" - pontuação:"+Pontuacao);
         btnModificarPont = findViewById(R.id.btnModificarPont);
         btnModificarPlayer = findViewById(R.id.btnModificarPlayer);
         btnExcluir = findViewById(R.id.btnExcluir);

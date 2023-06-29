@@ -27,7 +27,7 @@ public class Menu extends AppCompatActivity {
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                user.setNomeUsuario(edNomeUser.toString());
+                user.setNomeUsuario(edNomeUser.getText().toString());
                 user.setPontuacaoUsuario(pont);
 
             }
@@ -43,9 +43,10 @@ public class Menu extends AppCompatActivity {
         btnPont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 in = new Intent(Menu.this, ActivityPontuacao.class);
                 in.putExtra("Player", user.getNomeUsuario());
-                in.putExtra("Pontuacao", user.getPontuacaoUsuario());
+                in.putExtra("Pontuacao", String.valueOf(user.getPontuacaoUsuario()));
                 startActivity(in);
             }
         });
